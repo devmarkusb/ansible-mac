@@ -1,0 +1,47 @@
+---
+- name: config bash_profile
+  blockinfile:
+    state: present
+    mode: '0644'
+    path: "~/.bash_profile"
+    block: |
+      if [ -f /usr/share/bash-completion/completions/git ]; then
+          source /usr/share/bash-completion/completions/git
+      fi
+
+      # enable color support of ls and also add handy aliases" > .bash_aliases
+      if [ -x /usr/bin/dircolors ]; then
+        alias grep='grep --color=always'
+        alias fgrep='fgrep --color=always'
+        alias egrep='egrep --color=always'
+        alias pcregrep='pcregrep --color=always -M'
+      fi
+
+      # preserves colors, e.g. from grep output
+      alias less='less -r'
+
+      # enable sudo to be used together with aliases
+      alias sudo='sudo '
+
+      # convenience
+      alias ..='cd ..'
+      alias df='df -h'
+      alias l='LANG=C ls -AHhlF'
+      #alias g='git'
+      #alias gs='git status -s'
+      #alias gr='[! -z `git rev-parse --show-cdup`] && cd `git rev-parse --show-cdup || pwd`'
+
+      # vim for large files
+      alias vimlarge='vim -u "NONE" -c "set ruler"'
+
+      # tar's impossible to remember parameters..., you just need to add -x / -c for extract / compress
+      # commented-out what isn't yet working on mac
+      #alias targz='tar -I pigz -xf'
+      #alias targz-c='tar -I pigz -cf'
+      alias tarxz='tar -xJf'
+
+      export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
+      export SSH_AUTH_SOCK="$HOME/.ssh/agent"
+
+      # for VPN access to various servers
+      alias vpn-reda-hetzner='ssh-add ~/.ssh/id_markus-for-c24-servers && sudo openfortivpn -c ~/data/keys/markus_borris@openfortivpn-hetzner.cfg'

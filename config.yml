@@ -90,6 +90,7 @@ homebrew_cask_apps:
   - libreoffice
   - licecap
   - meld
+  - nextcloud
   - pycharm
   - sequel-ace
   #- slack

@@ -31,6 +31,10 @@
       when: configure_sudoers
       tags: ['sudoers']
 
+    - import_tasks: tasks/dotfiles-config.yml
+      when: configure_dotfiles
+      tags: ['dotfiles']
+
     - import_tasks: tasks/terminal.yml
       when: configure_terminal
       tags: ['terminal']
