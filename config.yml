@@ -86,6 +86,7 @@ homebrew_cask_apps:
   #- firefox # for now installed manually via c24 sc
   - goland
   - handbrake
+  - karabiner-elements
   - kdiff3
   #- keepassxc # for now installed manually via c24 sc
   - libreoffice
