@@ -50,6 +50,7 @@ homebrew_installed_packages:
   - libevent
   - sqlite
   - mcrypt
+  - ninja
   - nmap
   - node
   - nvm
