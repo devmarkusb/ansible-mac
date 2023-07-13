@@ -40,7 +40,7 @@
       #alias targz-c='tar -I pigz -cf'
       alias tarxz='tar -xJf'
 
-      export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
+      export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$HOME/bin:$PATH"
       export SSH_AUTH_SOCK="$HOME/.ssh/agent"
 
       # for VPN access to various servers

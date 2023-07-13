@@ -57,6 +57,7 @@ homebrew_installed_packages:
   - llvm
   - mc
   - mcrypt
+  - ninja
   - nmap
   - node
   - nvm
