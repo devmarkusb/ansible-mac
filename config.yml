@@ -97,6 +97,7 @@ homebrew_cask_apps:
   - sequel-ace
   #- slack # for now installed manually via c24 sc
   - transmit
+  - visual-studio-code
   - yubico-yubikey-manager
   #- zoom # for now installed manually via c24 sc
 
