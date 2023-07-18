@@ -93,8 +93,10 @@ homebrew_cask_apps:
   - licecap
   - meld
   - nextcloud
+  - postman
   - pycharm
   - sequel-ace
+  - stay
   #- slack # for now installed manually via c24 sc
   - transmit
   - visual-studio-code
