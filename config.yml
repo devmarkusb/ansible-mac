@@ -62,6 +62,7 @@ homebrew_installed_packages:
   - node
   - nvm
   - ssh-copy-id
+  - stats
   - theseal/ssh-askpass/ssh-askpass
   - tree
   - cowsay
