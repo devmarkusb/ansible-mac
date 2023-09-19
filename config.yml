@@ -96,7 +96,7 @@ homebrew_cask_apps:
   - licecap
   - meld
   - nextcloud
-  - postman
+  #- openvpn-connect # for now installed manually via c24 sc
   - pycharm
   - sequel-ace
   - stay
