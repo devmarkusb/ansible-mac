@@ -90,11 +90,12 @@ homebrew_cask_apps:
   - handbrake
   - insomnia
   - intellij-idea
-  - kdiff3
+  - karabiner-elements
+  #- kdiff3 # not working
   #- keepassxc # for now installed manually via c24 sc
   - libreoffice
   - licecap
-  - meld
+  #- meld # not working
   - nextcloud
   #- openvpn-connect # for now installed manually via c24 sc
   - pycharm
