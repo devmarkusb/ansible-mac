@@ -103,6 +103,7 @@ homebrew_cask_apps:
   - stay
   #- slack # for now installed manually via c24 sc
   - transmit
+  - vagrant
   - visual-studio-code
   - yubico-yubikey-manager
   #- zoom # for now installed manually via c24 sc
