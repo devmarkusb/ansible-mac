@@ -39,6 +39,10 @@
       when: configure_terminal
       tags: ['terminal']
 
+    - import_tasks: tasks/finder.yml
+      when: configure_finder
+      tags: ['finder']
+
     - import_tasks: tasks/osx.yml
       when: configure_osx
       tags: ['osx']

@@ -1,0 +1,6 @@
+---
+- name: Always show all hidden files.
+  command: "{{ item }}"
+  with_items:
+    - defaults write com.apple.finder AppleShowAllFiles True
+  changed_when: false
