@@ -58,6 +58,7 @@ homebrew_installed_packages:
   - llvm
   - mc
   - mcrypt
+  - michaelroosz/ssh/libsk-libfido2-install
   - ninja
   - nmap
   - node
