@@ -104,6 +104,7 @@ homebrew_cask_apps:
   - sequel-ace
   - stay
   #- slack # for now installed manually via c24 sc
+  - tigervnc-viewer
   - transmit
   - vagrant
   - visual-studio-code
