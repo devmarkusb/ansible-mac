@@ -108,6 +108,8 @@ homebrew_cask_apps:
   - transmit
   - vagrant
   - visual-studio-code
+  # untested
+  - --no-quarantine wine-stable
   - yubico-yubikey-manager
   #- zoom # for now installed manually via c24 sc
 
