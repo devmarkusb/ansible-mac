@@ -84,10 +84,11 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - clion
+  #- clion # for now seemingly installed via jetbrains toolbox
   - docker
   #- dropbox # for now installed manually via c24 sc
   #- firefox # for now installed manually via c24 sc
+  #- jetbrains-toolbox # for now seemingly installed via download package
   - goland
   - handbrake
   - insomnia
@@ -108,8 +109,7 @@ homebrew_cask_apps:
   - transmit
   - vagrant
   - visual-studio-code
-  # untested
-  - --no-quarantine wine-stable
+  - wine-stable
   - yubico-yubikey-manager
   #- zoom # for now installed manually via c24 sc
 

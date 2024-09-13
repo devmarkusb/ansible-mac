@@ -59,3 +59,12 @@
           return 0
       }
       complete -F _ssh ssh
+
+- name: config zshrc
+  blockinfile:
+    state: present
+    mode: '0644'
+    path: "~/.zshrc"
+    block: |
+        export SSH_SK_PROVIDER=/usr/local/lib/libsk-libfido2.dylib
+
