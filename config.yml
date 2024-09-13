@@ -58,13 +58,13 @@ homebrew_installed_packages:
   - llvm
   - mc
   - mcrypt
-  - michaelroosz/ssh/libsk-libfido2-install
+  # don't know, 'Not upgrading libsk-libfido2-install, the latest version is already installed'
+  #- michaelroosz/ssh/libsk-libfido2-install
   - ninja
   - nmap
   - node
   - nvm
   - ssh-copy-id
-  - stats
   - theseal/ssh-askpass/ssh-askpass
   - tree
   - cowsay
@@ -77,10 +77,6 @@ homebrew_installed_packages:
   - wget
   - wrk
   - zsh-history-substring-search
-
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -103,6 +99,7 @@ homebrew_cask_apps:
   #- openvpn-connect # for now installed manually via c24 sc
   - pycharm
   - sequel-ace
+  - stats
   - stay
   #- slack # for now installed manually via c24 sc
   - tigervnc-viewer

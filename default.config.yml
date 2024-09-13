@@ -63,9 +63,7 @@ homebrew_installed_packages:
   - wrk
   - zsh-history-substring-search
 
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
+# no homebrew_taps anymore, otherwise: Error: Tapping homebrew/core is no longer typically necessary.
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
