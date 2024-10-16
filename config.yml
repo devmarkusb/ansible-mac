@@ -8,7 +8,7 @@ configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
-dockitems_remove: [TV, Podcasts, Safari]
+dockitems_remove: [TV, Podcasts, Safari, Mail, Calendar, Reminders, Notes, Freeform, Dropbox]
 # - Launchpad
 # - TV
 # - Podcasts
