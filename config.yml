@@ -90,7 +90,7 @@ homebrew_cask_apps:
   - insomnia
   - intellij-idea
   - karabiner-elements
-  #- kdiff3 # not working
+  - kdiff3
   #- keepassxc # for now installed manually via c24 sc
   - libreoffice
   - licecap
