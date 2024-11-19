@@ -46,7 +46,7 @@ homebrew_installed_packages:
   - gifsicle
   - git
   - github/gh/gh
-  - go
+  #- go
   - gpg
   - graphviz
   - htop
@@ -80,15 +80,15 @@ homebrew_installed_packages:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  #- clion # for now seemingly installed via jetbrains toolbox
+  #- clion # for now installed via jetbrains toolbox
   - docker
   #- dropbox # for now installed manually via c24 sc
   #- firefox # for now installed manually via c24 sc
   #- jetbrains-toolbox # for now seemingly installed via download package
-  - goland
+  #- goland # for now installed via jetbrains toolbox
   - handbrake
   - insomnia
-  - intellij-idea
+  #- intellij-idea # for now installed via jetbrains toolbox
   - karabiner-elements
   - kdiff3
   #- keepassxc # for now installed manually via c24 sc
