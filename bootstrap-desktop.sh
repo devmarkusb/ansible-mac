@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
-# If you have a protected environment, just activate a venv upfront (first command only needed once):
-# $ python3 -m venv ~/venv
-# $ . ~/venv/bin/activate
+set -e
+
+if ! (pip >/dev/null && pip -V) ; then
+  python3 -m venv ~/venv
+  echo "Not in a virtual environment. Exiting."
+  exit 1
+fi
 
 xcode-select --install
 python3 -m pip install --upgrade pip
