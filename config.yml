@@ -9,14 +9,56 @@ configure_osx: true
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
 dockitems_remove: [TV, Podcasts, Safari, Mail, Calendar, Reminders, Notes, Freeform, Dropbox]
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+dockitems_persist:
+  - name: "Launchpad"
+    path: "/System/Applications/Launchpad.app/"
+    pos: 1
+  - name: "System Settings"
+    path: "/System/Applications/System Settings.app/"
+    pos: 2
+  - name: "Software Center"
+    path: "/Applications/Software Center.app/"
+    pos: 3
+  - name: "KeePassXC"
+    path: "/Applications/KeePassXC.app/"
+    pos: 4
+  - name: "Terminal"
+    path: "/Applications/Terminal.app/"
+    pos: 5
+  - name: "Firefox"
+    path: "/Applications/Firefox.app/"
+    pos: 6
+#   - name: "PyCharm.app"
+#     path: "/Applications/PyCharm.app/"
+#     pos: 7
+#   - name: "CLion.app"
+#     path: "/Applications/CLion.app/"
+#     pos: 8
+  - name: "GoLand"
+    path: "/Applications/GoLand.app/"
+    pos: 9
+  - name: "TigerVNC Viewer 1.14.1"
+    path: "/Applications/TigerVNC Viewer 1.14.1.app/"
+    pos: 10
+  - name: "Insomnia"
+    path: "/Applications/Insomnia.app/"
+    pos: 11
+  - name: "Postman"
+    path: "/Applications/Postman.app/"
+    pos: 12
+  - name: "Music"
+    path: "/Applications/Music.app/"
+    pos: 13
+  - name: "OpenVPN Connect"
+    path: "/Applications/OpenVPN Connect.app/"
+    pos: 14
+  - name: "Stats"
+    path: "/Applications/Stats.app/"
+    pos: 15
+  - name: "Karabiner-Elements"
+    path: "/Applications/Karabiner-Elements.app/"
+    pos: 16
+tags: ['dock']
 
 configure_sudoers: true
 sudoers_custom_config: |
