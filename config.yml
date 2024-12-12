@@ -38,8 +38,11 @@ dockitems_persist:
   - name: "GoLand"
     path: "/Applications/GoLand.app/"
     pos: 9
-  - name: "TigerVNC Viewer 1.14.1"
-    path: "/Applications/TigerVNC Viewer 1.14.1.app/"
+#   - name: "TigerVNC Viewer 1.14.1"
+#     path: "/Applications/TigerVNC Viewer 1.14.1.app/"
+#     pos: 10
+  - name: "VNC Viewer"
+    path: "/Applications/VNC Viewer.app/"
     pos: 10
   - name: "Insomnia"
     path: "/Applications/Insomnia.app/"
