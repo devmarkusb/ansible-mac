@@ -14,4 +14,4 @@ python3 -m pip install --upgrade pip
 python3 -m pip install ansible
 # use --force to upgrade
 ansible-galaxy install -r requirements.yml
-ansible-playbook main.yml -K #--check --diff
+ansible-playbook main.yml -K --check --diff
