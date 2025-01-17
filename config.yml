@@ -129,6 +129,7 @@ homebrew_installed_packages:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   #- clion # for now installed via jetbrains toolbox
+  - dehesselle-meld
   - docker
   #- dropbox # for now installed manually via c24 sc
   #- firefox # for now installed manually via c24 sc
@@ -142,7 +143,6 @@ homebrew_cask_apps:
   - keepassxc
   - libreoffice
   - licecap
-  #- meld # not working
   - nextcloud
   #- openvpn-connect # for now installed manually via c24 sc
   - pycharm
