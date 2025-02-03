@@ -93,6 +93,7 @@ homebrew_installed_packages:
   - ghex
   - gifsicle
   - git
+  - git-lfs
   - github/gh/gh
   #- go
   - gpg
