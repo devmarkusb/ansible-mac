@@ -132,7 +132,7 @@ homebrew_cask_apps:
   #- clion # for now installed via jetbrains toolbox
   - chatgpt
   - commander-one
-  - dehesselle-meld
+  - meld
   - docker
   - dockerutil
   #- dropbox # for now installed manually via c24 sc
