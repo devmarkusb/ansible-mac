@@ -113,6 +113,7 @@ homebrew_installed_packages:
   - nmap
   - node
   - nvm
+  - rg
   - ssh-copy-id
   - theseal/ssh-askpass/ssh-askpass
   - tree
@@ -123,6 +124,7 @@ homebrew_installed_packages:
   - openssl
   - pv
   - qt5
+  - uv
   - wget
   - wrk
   - zsh-history-substring-search
