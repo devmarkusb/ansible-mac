@@ -93,7 +93,7 @@ homebrew_installed_packages:
   - gifsicle
   - git
   - git-lfs
-  - github/gh/gh
+  - gh
   #- go
   - gpg
   - graphviz
