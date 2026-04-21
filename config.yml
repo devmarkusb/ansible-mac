@@ -168,7 +168,7 @@ homebrew_cask_apps:
   - vagrant
   - visual-studio-code
   - wine-stable
-  - yubico-yubikey-manager
+  - yubico-authenticator
   #- zoom # for now installed manually via c24 sc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
