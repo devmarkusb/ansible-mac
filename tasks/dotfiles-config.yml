@@ -1,9 +1,13 @@
 ---
+# User home dotfiles: never use "~" in path — with become=true (ansible.cfg) it
+# expands to root's home (/var/root). Use ansible_user_dir and run without become.
 - name: config bash_profile
+  become: false
   blockinfile:
     state: present
     mode: '0644'
-    path: "~/.bash_profile"
+    path: "{{ ansible_user_dir }}/.bash_profile"
+    owner: "{{ ansible_user_id }}"
     block: |
       if [ -f ~/.bashrc ]; then
         . ~/.bashrc
@@ -67,15 +71,17 @@
       venva()
       {
           echo "activating home venv..."
-          . $HOME/venv/bin/activate
+          . $HOME/.venv/bin/activate
       }
 
 - name: config bashrc
+  become: false
   blockinfile:
     state: present
     create: true
     mode: '0644'
-    path: "~/.bashrc"
+    path: "{{ ansible_user_dir }}/.bashrc"
+    owner: "{{ ansible_user_id }}"
     block: |
       # bash completion
       if [ -f /opt/homebrew/etc/profile.d/bash_completion.sh ]; then
@@ -85,11 +91,13 @@
       fi
 
 - name: config zshrc
+  become: false
   blockinfile:
     state: present
     create: true
     mode: '0644'
-    path: "~/.zshrc"
+    path: "{{ ansible_user_dir }}/.zshrc"
+    owner: "{{ ansible_user_id }}"
     block: |
       # Colors.
       unset LSCOLORS
@@ -223,10 +231,12 @@
       export SSH_SK_PROVIDER=/usr/local/lib/libsk-libfido2.dylib
 
 - name: config wezterm
+  become: false
   blockinfile:
     state: present
     mode: '0644'
-    path: "~/.wezterm"
+    path: "{{ ansible_user_dir }}/.wezterm"
+    owner: "{{ ansible_user_id }}"
     block: |
       local wezterm = require 'wezterm'
 
