@@ -5,6 +5,10 @@
     mode: '0644'
     path: "~/.bash_profile"
     block: |
+      if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+      fi
+
       if [ -f /usr/share/bash-completion/completions/git ]; then
           source /usr/share/bash-completion/completions/git
       fi
@@ -65,6 +69,20 @@
           echo "activating home venv..."
           . $HOME/venv/bin/activate
       }
+
+- name: config bashrc
+  blockinfile:
+    state: present
+    create: true
+    mode: '0644'
+    path: "~/.bashrc"
+    block: |
+      # bash completion
+      if [ -f /opt/homebrew/etc/profile.d/bash_completion.sh ]; then
+        . /opt/homebrew/etc/profile.d/bash_completion.sh
+      elif [ -f /usr/local/etc/profile.d/bash_completion.sh ]; then
+        . /usr/local/etc/profile.d/bash_completion.sh
+      fi
 
 - name: config zshrc
   blockinfile:
