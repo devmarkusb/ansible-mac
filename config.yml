@@ -7,64 +7,69 @@ configure_terminal: true
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
-# List current state with `dockutil -L`
+# Capture current layout: `dockutil --list`
 configure_dock: true
-dockitems_remove: [TV, Podcasts, Safari, Mail, Calendar, Reminders, Notes, Freeform, Dropbox]
+dockitems_remove: []
 dockitems_persist:
-  - name: "Launchpad"
-    path: "/System/Applications/Launchpad.app/"
+  - name: "Commander One"
+    path: "/Applications/Commander One.app/"
     pos: 1
   - name: "System Settings"
     path: "/System/Applications/System Settings.app/"
     pos: 2
-  - name: "Software Center"
-    path: "/Applications/Software Center.app/"
-    pos: 3
   - name: "KeePassXC"
     path: "/Applications/KeePassXC.app/"
+    pos: 3
+  - name: "1Password"
+    path: "/Applications/1Password.app/"
     pos: 4
-  - name: "Terminal"
-    path: "/Applications/Terminal.app/"
-    pos: 5
   - name: "Firefox"
     path: "/Applications/Firefox.app/"
+    pos: 5
+  - name: "ChatGPT"
+    path: "/Applications/ChatGPT.app/"
     pos: 6
-#   - name: "PyCharm.app"
-#     path: "/Applications/PyCharm.app/"
-#     pos: 7
-#   - name: "CLion.app"
-#     path: "/Applications/CLion.app/"
-#     pos: 8
-  - name: "GoLand"
-    path: "/Applications/GoLand.app/"
-    pos: 9
-#   - name: "TigerVNC Viewer 1.14.1"
-#     path: "/Applications/TigerVNC Viewer 1.14.1.app/"
-#     pos: 10
-  - name: "VNC Viewer"
-    path: "/Applications/VNC Viewer.app/"
-    pos: 10
-  - name: "Insomnia"
-    path: "/Applications/Insomnia.app/"
-    pos: 11
   - name: "Postman"
     path: "/Applications/Postman.app/"
-    pos: 12
-  - name: "Music"
-    path: "/Applications/Music.app/"
-    pos: 13
+    pos: 7
+  - name: "VNC Viewer"
+    path: "/Applications/VNC Viewer.app/"
+    pos: 8
   - name: "OpenVPN Connect"
-    path: "/Applications/OpenVPN Connect.app/"
-    pos: 14
+    path: "/Applications/OpenVPN Connect/OpenVPN Connect.app/"
+    pos: 9
   - name: "Stats"
     path: "/Applications/Stats.app/"
-    pos: 15
+    pos: 10
   - name: "Activity Monitor"
-    path: "/Applications/Utilities/Activity Monitor.app/"
+    path: "/System/Applications/Utilities/Activity Monitor.app/"
+    pos: 11
+  - name: "WezTerm"
+    path: "/Applications/WezTerm.app/"
+    pos: 12
+  - name: "PyCharm"
+    path: "/Applications/PyCharm.app/"
+    pos: 13
+  - name: "CLion 2026.1"
+    path: "/Users/markus.borris/Applications/CLion 2026.1.app/"
+    pos: 14
+  - name: "GoLand"
+    path: "/Users/markus.borris/Applications/GoLand.app/"
+    pos: 15
+  - name: "Calculator"
+    path: "/System/Applications/Calculator.app/"
     pos: 16
-  - name: "Karabiner-Elements"
-    path: "/Applications/Karabiner-Elements.app/"
+  - name: "Slack"
+    path: "/Applications/Slack.app/"
     pos: 17
+  # Was in recentApps; listing here pins it like the rest.
+  - name: "OrbStack"
+    path: "/Applications/OrbStack.app/"
+    pos: 18
+  # Document on the Dock (right / Documents strip); path must match the file.
+  - name: "tmp.md"
+    path: "/Users/markus.borris/CHECK24 Reise Ges. Dropbox/Markus Borris/tmp.md"
+    pos: 19
 
 configure_sudoers: true
 sudoers_custom_config: |
