@@ -234,8 +234,9 @@
   become: false
   blockinfile:
     state: present
+    create: true
     mode: '0644'
-    path: "{{ ansible_user_dir }}/.wezterm"
+    path: "{{ ansible_user_dir }}/.wezterm.lua"
     owner: "{{ ansible_user_id }}"
     block: |
       local wezterm = require 'wezterm'
@@ -292,7 +293,7 @@
       config.use_fancy_tab_bar = false
 
       -- Scrollback
-      config.scrollback_lines = 10000
+      config.scrollback_lines = 10000000
 
       -- Keybindings
       config.keys = {
