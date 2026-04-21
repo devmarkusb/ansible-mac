@@ -65,7 +65,6 @@ dockitems_persist:
   - name: "Karabiner-Elements"
     path: "/Applications/Karabiner-Elements.app/"
     pos: 17
-tags: ['dock']
 
 configure_sudoers: true
 sudoers_custom_config: |
@@ -137,7 +136,6 @@ homebrew_cask_apps:
   - commander-one
   - meld
   - docker
-  - dockerutil
   #- dropbox # for now installed manually via c24 sc
   #- firefox # for now installed manually via c24 sc
   #- jetbrains-toolbox # for now seemingly installed via download package
