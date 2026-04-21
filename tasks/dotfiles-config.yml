@@ -232,14 +232,11 @@
 
 - name: config wezterm
   become: false
-  blockinfile:
-    state: present
-    create: true
+  copy:
     mode: '0644'
-    path: "{{ ansible_user_dir }}/.wezterm.lua"
+    dest: "{{ ansible_user_dir }}/.wezterm.lua"
     owner: "{{ ansible_user_id }}"
-    marker: "-- {mark} ANSIBLE MANAGED BLOCK"
-    block: |
+    content: |
       local wezterm = require 'wezterm'
 
       local config = {}
@@ -324,5 +321,8 @@
         -- Copy mode
         { key = "[", mods = "CMD", action = wezterm.action.ActivateCopyMode },
       }
+
+      config.initial_cols = 86
+      config.initial_rows = 40
 
       return config
