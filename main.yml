@@ -12,6 +12,12 @@
         - "{{ playbook_dir }}/config.yml"
       tags: ['always']
 
+    - name: Set homebrew ownership variables from ansible_facts.
+      set_fact:
+        homebrew_user: "{{ homebrew_user | default(ansible_facts['user_id']) }}"
+        homebrew_group: "{{ homebrew_group | default(ansible_facts['user_gid']) }}"
+      tags: ['always']
+
   roles:
     - role: elliotweiser.osx-command-line-tools
     - role: geerlingguy.mac.homebrew
