@@ -50,6 +50,7 @@
       #alias targz-c='tar -I pigz -cf'
       alias tarxz='tar -xJf'
 
+      export PATH="$HOME/.local/bin:$PATH"
       export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$HOME/bin:$PATH"
       #export SSH_AUTH_SOCK="$HOME/.ssh/agent"
       export SSH_SK_PROVIDER=/usr/local/lib/libsk-libfido2.dylib
@@ -114,6 +115,7 @@
       plugins=(git brew history kubectl history-substring-search)
 
       # Custom $PATH with extra locations.
+      export PATH="$HOME/.local/bin:$PATH"
       export PATH=$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/go/bin:$HOME/.cargo/bin:/usr/local/git/bin:$HOME/.composer/vendor/bin:$PATH
 
       # Bash-style time output.
