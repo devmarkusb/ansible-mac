@@ -9,6 +9,7 @@ configure_osx: true
 # Set to 'true' to configure the Dock via dockutil.
 # Capture current layout: `dockutil --list`
 configure_dock: true
+dock_tilesize: 38
 dockitems_remove: []
 dockitems_persist:
   - name: "Commander One"

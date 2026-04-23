@@ -1,0 +1,9 @@
+---
+- name: Set Dock tile size
+  become: false
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: tilesize
+    type: int
+    value: "{{ dock_tilesize }}"
+  notify: Restart Dock

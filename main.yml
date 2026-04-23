@@ -53,6 +53,10 @@
       when: configure_osx
       tags: ['osx']
 
+    - import_tasks: tasks/dock.yml
+      when: configure_dock
+      tags: ['dock']
+
     - import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
 
@@ -68,3 +72,8 @@
           loop_control:
             loop_var: outer_item
           with_fileglob: "{{ post_provision_tasks | default(omit) }}"
+
+  handlers:
+    - name: Restart Dock
+      become: false
+      command: killall Dock
