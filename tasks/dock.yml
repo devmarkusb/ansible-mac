@@ -7,3 +7,16 @@
     type: int
     value: "{{ dock_tilesize }}"
   notify: Restart Dock
+
+- name: Ensure must-have dock items exist at front of Dock
+  become: false
+  ansible.builtin.shell: |
+    result=$(dockutil --find '{{ item.name }}' 2>&1)
+    if [ $? -eq 0 ] && ! echo "$result" | grep -q 'recent-apps'; then
+      exit 0
+    fi
+    dockutil --add '{{ item.path }}' --label '{{ item.name }}' --position beginning --no-restart
+  loop: "{{ dockitems_persist | reverse | list }}"
+  register: dock_add_result
+  changed_when: "'added' in dock_add_result.stdout"
+  notify: Restart Dock
