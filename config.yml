@@ -95,6 +95,7 @@ homebrew_installed_packages:
   - node
   - nvm
   - rg
+  - rtk
   - ssh-copy-id
   - theseal/ssh-askpass/ssh-askpass
   - tree
@@ -105,6 +106,7 @@ homebrew_installed_packages:
   - openssl
   - pv
   - qt5
+  - smart-mcp-proxy/mcpproxy/mcpproxy
   - uv
   - wget
   - wrk
