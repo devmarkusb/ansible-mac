@@ -126,7 +126,6 @@ homebrew_cask_apps:
   #- jetbrains-toolbox # for now seemingly installed via download package
   #- goland # for now installed via jetbrains toolbox
   - handbrake
-  - insomnia
   #- intellij-idea # for now installed via jetbrains toolbox
   - karabiner-elements
   # could need --no-quarantine when installing
