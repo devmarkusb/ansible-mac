@@ -14,39 +14,23 @@ dockitems_remove: []
 # Items listed here are "must-haves": if absent from the Dock they are added
 # at the front (in list order). Existing items are never moved or removed.
 dockitems_persist:
-  - name: "Commander One"
-    path: "/Applications/Commander One.app/"
-  - name: "System Settings"
-    path: "/System/Applications/System Settings.app/"
-  - name: "KeePassXC"
-    path: "/Applications/KeePassXC.app/"
-  - name: "1Password"
-    path: "/Applications/1Password.app/"
-  - name: "Firefox"
-    path: "/Applications/Firefox.app/"
-  - name: "ChatGPT"
-    path: "/Applications/ChatGPT.app/"
-  - name: "CLion"
-    path: "/Users/markus.borris/Applications/CLion.app/"
-  - name: "GoLand"
-    path: "/Users/markus.borris/Applications/GoLand.app/"
-  - name: "WezTerm"
-    path: "/Applications/WezTerm.app/"
-  - name: "Calculator"
-    path: "/System/Applications/Calculator.app/"
-  - name: "Postman"
-    path: "/Applications/Postman.app/"
-  - name: "TigerVNC"
-    path: "/Applications/TigerVNC.app/"
-  - name: "OpenVPN Connect"
-    path: "/Applications/OpenVPN Connect/OpenVPN Connect.app/"
-  - name: "Slack"
-    path: "/Applications/Slack.app/"
-  - name: "Activity Monitor"
-    path: "/System/Applications/Utilities/Activity Monitor.app/"
+  - { name: "Commander One", path: "/Applications/Commander One.app/", pos: 1 }
+  - { name: "System Settings", path: "/System/Applications/System Settings.app/", pos: 2 }
+  - { name: "KeePassXC", path: "/Applications/KeePassXC.app/", pos: 3 }
+  - { name: "1Password", path: "/Applications/1Password.app/", pos: 4 }
+  - { name: "Firefox", path: "/Applications/Firefox.app/", pos: 5 }
+  - { name: "ChatGPT", path: "/Applications/ChatGPT.localized/ChatGPT.app/", pos: 6 }
+  - { name: "CLion", path: "~/Applications/CLion.app/", pos: 7 }
+  - { name: "GoLand", path: "~/Applications/GoLand.app/", pos: 8 }
+  - { name: "WezTerm", path: "/Applications/WezTerm.app/", pos: 9 }
+  - { name: "Calculator", path: "/System/Applications/Calculator.app/", pos: 10 }
+  - { name: "Postman", path: "/Applications/Postman.app/", pos: 11 }
+  - { name: "TigerVNC", path: "/Applications/TigerVNC.app/", pos: 12 }
+  - { name: "OpenVPN Connect", path: "/Applications/OpenVPN Connect/OpenVPN Connect.app/", pos: 13 }
+  - { name: "Activity Monitor", path: "/System/Applications/Utilities/Activity Monitor.app/", pos: 14 }
+  - { name: "Slack", path: "/Applications/Slack.app/", pos: 15 }
   # Document on the Dock (right / Documents strip); path must match the file.
-  - name: "tmp.md"
-    path: "/Users/markus.borris/CHECK24 Reise Ges. Dropbox/Markus Borris/tmp.md"
+  - { name: "tmp.md", path: "~/tmp.md", pos: 16 }
 
 configure_sudoers: true
 sudoers_custom_config: |
@@ -122,7 +106,7 @@ homebrew_cask_apps:
   - chatgpt
   - commander-one
   - meld
-  - docker
+  #- docker # provided by orbstack; cask conflicts with /usr/local/bin/docker-credential-osxkeychain
   #- dropbox # for now installed manually via c24 sc
   #- firefox # for now installed manually via c24 sc
   #- jetbrains-toolbox # for now seemingly installed via download package

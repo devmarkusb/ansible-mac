@@ -15,7 +15,7 @@
     if [ $? -eq 0 ] && ! echo "$result" | grep -q 'recent-apps'; then
       exit 0
     fi
-    dockutil --add '{{ item.path }}' --label '{{ item.name }}' --position beginning --no-restart
+    dockutil --add '{{ item.path | expanduser }}' --label '{{ item.name }}' --position beginning --no-restart
   loop: "{{ dockitems_persist | reverse | list }}"
   register: dock_add_result
   changed_when: "'added' in dock_add_result.stdout"
