@@ -5,7 +5,7 @@
     domain: com.apple.dock
     key: tilesize
     type: int
-    value: "{{ dock_tilesize }}"
+    value: "{{ dock_tilesize | int }}"
   notify: Restart Dock
 
 - name: Ensure must-have dock items exist at front of Dock

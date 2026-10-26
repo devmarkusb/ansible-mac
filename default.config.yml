@@ -6,16 +6,34 @@ configure_terminal: true
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
+configure_dock: true
+
+# Dock tile size (matches current system setting of the machine).
+dock_tilesize: 47
+
+# Apps currently pinned in the Dock, in their current order (pos = 1-based position).
 dockitems_remove: []
 # - Launchpad
 # - TV
 # - Podcasts
 # - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+dockitems_persist:
+  - { name: "Commander One", path: "/Applications/Commander One.app/", pos: 1 }
+  - { name: "System Settings", path: "/System/Applications/System Settings.app/", pos: 2 }
+  - { name: "KeePassXC", path: "/Applications/KeePassXC.app/", pos: 3 }
+  - { name: "1Password", path: "/Applications/1Password.app/", pos: 4 }
+  - { name: "Firefox", path: "/Applications/Firefox.app/", pos: 5 }
+  - { name: "ChatGPT", path: "/Applications/ChatGPT.localized/ChatGPT.app/", pos: 6 }
+  - { name: "CLion", path: "~/Applications/CLion.app/", pos: 7 }
+  - { name: "GoLand", path: "~/Applications/GoLand.app/", pos: 8 }
+  - { name: "WezTerm", path: "/Applications/WezTerm.app/", pos: 9 }
+  - { name: "Calculator", path: "/System/Applications/Calculator.app/", pos: 10 }
+  - { name: "Postman", path: "/Applications/Postman.app/", pos: 11 }
+  - { name: "TigerVNC", path: "/Applications/TigerVNC.app/", pos: 12 }
+  - { name: "OpenVPN Connect", path: "/Applications/OpenVPN Connect/OpenVPN Connect.app/", pos: 13 }
+  - { name: "Activity Monitor", path: "/System/Applications/Utilities/Activity Monitor.app/", pos: 14 }
+  - { name: "Slack", path: "/Applications/Slack.app/", pos: 15 }
+  - { name: "Amphetamine", path: "/Applications/Amphetamine.app/", pos: 16 }
 
 configure_sudoers: false
 sudoers_custom_config: ''

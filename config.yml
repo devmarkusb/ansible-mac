@@ -9,7 +9,7 @@ configure_osx: true
 # Set to 'true' to configure the Dock via dockutil.
 # Capture current layout: `dockutil --list`
 configure_dock: true
-dock_tilesize: 38
+dock_tilesize: 47
 dockitems_remove: []
 # Items listed here are "must-haves": if absent from the Dock they are added
 # at the front (in list order). Existing items are never moved or removed.
@@ -26,8 +26,8 @@ dockitems_persist:
     path: "/Applications/Firefox.app/"
   - name: "ChatGPT"
     path: "/Applications/ChatGPT.app/"
-  - name: "PyCharm"
-    path: "/Applications/PyCharm.app/"
+  - name: "CLion"
+    path: "/Users/markus.borris/Applications/CLion.app/"
   - name: "GoLand"
     path: "/Users/markus.borris/Applications/GoLand.app/"
   - name: "WezTerm"
@@ -36,8 +36,8 @@ dockitems_persist:
     path: "/System/Applications/Calculator.app/"
   - name: "Postman"
     path: "/Applications/Postman.app/"
-  - name: "VNC Viewer"
-    path: "/Applications/VNC Viewer.app/"
+  - name: "TigerVNC"
+    path: "/Applications/TigerVNC.app/"
   - name: "OpenVPN Connect"
     path: "/Applications/OpenVPN Connect/OpenVPN Connect.app/"
   - name: "Slack"
